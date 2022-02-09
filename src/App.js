@@ -1,11 +1,13 @@
-import './App.css'
+import { Outlet } from 'react-router-dom'
 
-import { Outlet, Link } from 'react-router-dom'
+import Header from './components/Header'
+
+import './App.css'
 
 function App() {
   return (
     <div className='App'>
-      <h1>Scoot</h1>
+      <Header />
 
       <Outlet />
     </div>
