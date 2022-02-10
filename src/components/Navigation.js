@@ -7,7 +7,7 @@ import './Navigation.css'
 const Navigation = () => {
   return (
     <div className='Navigation'>
-      <h4>Navigation</h4>
+      <h4>Scoot logo</h4>
       <nav>
         <ul>
           <li>

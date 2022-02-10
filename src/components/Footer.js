@@ -2,10 +2,21 @@ import React from 'react'
 
 import './Footer.css'
 
+import Navigation from './Navigation'
+
 const Footer = () => {
   return (
     <footer className='Footer'>
-      <h3>Footer</h3>
+      <div className='footer__main'>
+        <h2>Sign up and Scoot off today</h2>
+
+        <div className='buttons-area'>
+          <button className='btn'>AppStore</button>
+          <button className='btn'>GooglePlay</button>
+        </div>
+      </div>
+
+      <Navigation />
     </footer>
   )
 }
