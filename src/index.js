@@ -6,6 +6,7 @@ import './index.css'
 import App from './App'
 import Home from './components/Home'
 import About from './components/About'
+import Careers from './components/Careers'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
         <Route path='/' element={<App />}>
           <Route path='home' element={<Home />} />
           <Route path='about' element={<About />} />
+          <Route path='careers' element={<Careers />} />
           <Route path='/' element={<Navigate to='home' />} />
 
           <Route
