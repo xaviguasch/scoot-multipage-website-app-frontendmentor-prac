@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import './index.css'
 import App from './App'
 import Home from './components/Home'
+import About from './components/About'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<App />}>
           <Route path='home' element={<Home />} />
+          <Route path='about' element={<About />} />
           <Route path='/' element={<Navigate to='home' />} />
 
           <Route
