@@ -1,8 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import QuestAndAns from './QuestAndAns'
 
 import './About.css'
 
 const About = () => {
+  const [activeAnswer, setActiveAnswer] = useState('')
+
+  const handleClickQuestion = (id) => {
+    setActiveAnswer(id)
+
+    console.log(id)
+  }
+
+  const questionsHowItWorks = [
+    {
+      id: 'qh1',
+      question: 'How do I download the app?',
+      answer:
+        'To download the Scoot App, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.',
+    },
+    {
+      id: 'qh2',
+      question: 'Can I find a nearby Scoots?',
+      answer:
+        'Definitely! Simply open up the app and allow us to find your location while using it. We’ll show you all of the closest Scoots and some extra useful information. ',
+    },
+    {
+      id: 'qh3',
+      question: 'How do I download the app?',
+      answer:
+        'Yup! We provide information inside the app regarding local laws and the license you need to be able to ride our Scoots.',
+    },
+  ]
+
   return (
     <div className='About'>
       <section className='banner'>
@@ -92,30 +123,17 @@ const About = () => {
             </div>
             <div className='faq-group__questions'>
               <ul className='questions-list'>
-                <li className='q-and-a'>
-                  <p className='q-and-a__question'> How do I download the app?</p>
-                  <p className='q-and-a__answer'>
-                    To download the Scoot app, you can search “Scoot” in both the App and
-                    Google Play stores. An even simpler way to do it would be to click the
-                    relevant link at the bottom of this page and you’ll be re-directed to
-                    the correct page.
-                  </p>
-                </li>
-                <li className='q-and-a'>
-                  <p className='q-and-a__question'> Can I find a nearby Scoots?</p>
-                  <p className='q-and-a__answer'>
-                    Definitely! Simply open up the app and allow us to find your location
-                    while using it. We'll show you all of the closest Scoots and some
-                    extra useful information.
-                  </p>
-                </li>
-                <li className='q-and-a'>
-                  <p className='q-and-a__question'> Do I need a license to ride?</p>
-                  <p className='q-and-a__answer'>
-                    Yup! We provide information inside the app regarding local laws and
-                    the license you need to be able to ride our Scoots.
-                  </p>
-                </li>
+                {questionsHowItWorks.map((qa) => (
+                  <li key={qa.id}>
+                    <QuestAndAns
+                      id={qa.id}
+                      question={qa.question}
+                      answer={qa.answer}
+                      onHandleClickQuestion={handleClickQuestion}
+                      activeAnswer={activeAnswer}
+                    />
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -126,7 +144,11 @@ const About = () => {
             </div>
             <div className='faq-group__questions'>
               <ul className='questions-list'>
-                <li className='q-and-a'>
+                <li
+                  className={`q-and-a ${activeAnswer ? 'active' : ''}`}
+                  id='q4'
+                  onClick={handleClickQuestion}
+                >
                   <p className='q-and-a__question'>Should I wear a helmet?</p>
                   <p className='q-and-a__answer'>
                     Yes, please do! All cities have different laws. But we strongly
@@ -135,7 +157,11 @@ const About = () => {
                     while Scooting.
                   </p>
                 </li>
-                <li className='q-and-a'>
+                <li
+                  className={`q-and-a ${activeAnswer ? 'active' : ''}`}
+                  id='q5'
+                  onClick={handleClickQuestion}
+                >
                   <p className='q-and-a__question'>How about the rules & regulations?</p>
                   <p className='q-and-a__answer'>
                     Now is not the time to be a rule breaker. Be sure you're complying
@@ -144,7 +170,11 @@ const About = () => {
                     or get in people's way.
                   </p>
                 </li>
-                <li className='q-and-a'>
+                <li
+                  className={`q-and-a ${activeAnswer ? 'active' : ''}`}
+                  id='q6'
+                  onClick={handleClickQuestion}
+                >
                   <p className='q-and-a__question'>What if I damage my Scoot?</p>
                   <p className='q-and-a__answer'>
                     Be sure to read our terms and conditions carefully. Not the most fun

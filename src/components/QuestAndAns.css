@@ -1,0 +1,7 @@
+.q-and-a__answer {
+  display: none;
+}
+
+.q-and-a__answer.active {
+  display: block;
+}
