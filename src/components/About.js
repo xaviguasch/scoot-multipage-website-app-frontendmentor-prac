@@ -5,7 +5,7 @@ import './About.css'
 const About = () => {
   return (
     <div className='About'>
-      <section className='About__banner'>
+      <section className='banner'>
         <h2 className='title-banner'>About</h2>
       </section>
       <section className='main'>
