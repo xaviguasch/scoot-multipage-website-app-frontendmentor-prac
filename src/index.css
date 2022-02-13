@@ -52,25 +52,94 @@
   /* Text */
   --clr-white-text: hsla(0, 0%, 100%, 1);
   --clr-dark-navy-text: hsl(216, 17%, 35%);
+  --clr-dim-grey-text: hsla(217, 12%, 62%, 1);
 
   /* Background  */
   --clr-white-bg: hsla(0, 0%, 100%, 1);
 
   /* Others */
+  --clr-yellow: hsla(40, 97%, 58%);
+  --clr-light-yellow: hsla(39, 100%, 94%, 1);
+  --clr-light-grey: hsla(213, 40%, 93%, 1);
+  --clr-snow: hsla(214, 37%, 96%, 1);
 }
 
 body {
   background: var(--clr-white-bg);
 
-  color: var(--clr-dark-navy-text);
+  color: var(--clr-dim-grey-text);
   font-family: var(--ff-main);
   font-size: var(--fs-16);
   font-weight: var(--fw-regular);
   line-height: 1.666;
-  text-align: left;
+  text-align: center;
 }
 
 img {
   display: block;
   max-width: 100%;
 }
+
+/* ================== */
+/* Typography */
+/* ================== */
+.title {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-40);
+  /* color: var(--clr-white-text); */
+  font-weight: var(--fw-bold);
+  letter-spacing: -1.79px;
+  line-height: 1;
+}
+
+.title--sm,
+.title--normal,
+.title--md {
+  color: var(--clr-dark-navy-text);
+}
+
+.title--md {
+  font-size: var(--fs-32);
+  letter-spacing: -1.43px;
+}
+
+.title--normal {
+  font-size: var(--fs-24);
+  letter-spacing: -1.07px;
+}
+
+.title--sm {
+  font-size: var(--fs-20);
+  letter-spacing: -0.89px;
+}
+
+.text {
+  font-size: var(--fs-15);
+  /* color: var(--clr-white-text); */
+}
+
+.text--alt {
+  color: var(--clr-dim-grey-text);
+}
+
+.card__number {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-24);
+  letter-spacing: -1.07px;
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark-navy-text);
+}
+
+/* ================== */
+/* Links */
+/* ================== */
+.btn {
+  font-size: var(--fs-15);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  /* color: var(--clr-white-text); */
+}
+
+/* ================== */
+/* Buttons & inputs */
+/* ================== */

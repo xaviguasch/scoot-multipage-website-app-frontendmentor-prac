@@ -15,7 +15,9 @@ const Home = () => {
             bike, unlock it with a tap, and you’re away!
           </p>
 
-          <button className='btn btn--hero'> Get Scootin</button>
+          <a className='btn btn--hero' href='#'>
+            Get Scootin
+          </a>
         </div>
       </section>
       <section className='main'>
@@ -23,7 +25,7 @@ const Home = () => {
           <ul>
             <li>
               <img src='' alt='' />
-              <h3>Locate with app</h3>
+              <h3 className='title title--sm'>Locate with app</h3>
               <p>
                 Use the app to find the nearest scooter to you. We are continuously
                 placing scooters in the areas with most demand, so one should never be too
@@ -32,7 +34,7 @@ const Home = () => {
             </li>
             <li>
               <img src='' alt='' />
-              <h3>Pick your scooter</h3>
+              <h3 className='title title--sm'>Pick your scooter</h3>
               <p>
                 We show the most important info for the scooters closest to you. So you
                 know how much charge they have left and can see roughly how much it will
@@ -41,7 +43,7 @@ const Home = () => {
             </li>
             <li>
               <img src='' alt='' />
-              <h3>Enjoy the ride</h3>
+              <h3 className='title title--sm'>Enjoy the ride</h3>
               <p>
                 Scan the QR code and the bike will unlock. Retract the cable lock, put on
                 a helmet, and you’re off! Always lock bikes away from walkways and
@@ -60,7 +62,9 @@ const Home = () => {
                 you your average speed, how long you've been using the scooter, your
                 traveling distance, and many more things all in an easy to use app.
               </p>
-              <button className='btn'>Learn More</button>
+              <a className='btn' href='#'>
+                Learn More
+              </a>
             </div>
 
             <div className='pair__illus'>
@@ -76,7 +80,9 @@ const Home = () => {
                 be sure to let us know if you want to see us in your hometown. We’re
                 aiming to let our scooters loose on 23 cities over the coming year.
               </p>
-              <button className='btn'>Learn More</button>
+              <a className='btn' href='#'>
+                Learn More
+              </a>
             </div>
 
             <div className='pair__illus'>
@@ -92,7 +98,9 @@ const Home = () => {
                 debit cards. You can also link your PayPal account inside the app. Need to
                 pay later? No worries! You can defer payment for up to a month.
               </p>
-              <button className='btn'>Learn More</button>
+              <a className='btn' href='#'>
+                Learn More
+              </a>
             </div>
 
             <div className='pair__illus'>

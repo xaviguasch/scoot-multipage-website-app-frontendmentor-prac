@@ -37,7 +37,7 @@ const About = () => {
   return (
     <div className='About'>
       <section className='banner'>
-        <h2 className='title-banner'>About</h2>
+        <h2 className='title'>About</h2>
       </section>
       <section className='main'>
         <div className='main__b'>
@@ -80,7 +80,7 @@ const About = () => {
               <div className='card'>
                 <img src='' alt='' />
                 <div className='card__number'>1</div>
-                <h3 className='title title--sm'>Our tech</h3>
+                <h3 className='title title--normal'>Our tech</h3>
                 <p className='text text--alt'>
                   We’re using cutting edge technology to drive accessible urban
                   transportation forward. Our fully electric scooters are a joy to ride!
@@ -92,7 +92,7 @@ const About = () => {
               <div className='card'>
                 <img src='' alt='' />
                 <div className='card__number'>2</div>
-                <h3 className='title title--sm'>Our integrity</h3>
+                <h3 className='title title--normal'>Our integrity</h3>
                 <p className='text text--alt'>
                   We are fully committed to deliver a great yet safe, sustainable
                   micro-mobility experience in every city we serve.
@@ -104,7 +104,7 @@ const About = () => {
               <div className='card'>
                 <img src='' alt='' />
                 <div className='card__number'>3</div>
-                <h3 className='title title--sm'>Our community</h3>
+                <h3 className='title title--normal'>Our community</h3>
                 <p className='text text--alt'>
                   We support every community we serve. All workers are paid a living wage
                   based on their location and are Scoot employees.
