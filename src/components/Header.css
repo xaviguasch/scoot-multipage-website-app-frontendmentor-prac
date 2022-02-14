@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
 
-  padding-bottom: 1.5em;
+  padding: 1.5em 2em;
 }
 
 /* This trick makes one element be at the 
@@ -14,7 +14,7 @@ corner and the other at the exact middle */
 }
 
 .Navigation {
-  padding-top: 0.5em;
+  padding-top: 0.45em;
 }
 
 .Header__logo {

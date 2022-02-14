@@ -1,0 +1,24 @@
+.Home {
+}
+
+.hero {
+  background: url('../assets/patterns/right-arrow.svg'),
+    url('../assets/images/home-hero-mobile.jpg');
+
+  background-position: bottom 30px left -315px, top left;
+  background-repeat: no-repeat;
+
+  padding: 7.1875em 2em 11.1875em;
+}
+
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.hero__copy .btn {
+  margin-top: 0.625em;
+}
