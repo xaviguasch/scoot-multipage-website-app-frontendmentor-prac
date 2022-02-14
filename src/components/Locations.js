@@ -6,7 +6,7 @@ const Locations = () => {
   return (
     <div className='Locations'>
       <section className='banner'>
-        <h2 className='title-banner'>Locations</h2>
+        <h2 className='title'>Locations</h2>
       </section>
       <section className='main'>
         <div className='main__e'>
@@ -21,7 +21,9 @@ const Locations = () => {
               track requests and plan launches based on demand. Feel free to message us by
               clicking the link or messaging us on social.
             </p>
-            <button className='btn'>Message us</button>
+            <a className='btn' href='#'>
+              Message us
+            </a>
           </div>
         </div>
       </section>

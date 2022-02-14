@@ -113,6 +113,10 @@ img {
   letter-spacing: -0.89px;
 }
 
+.title--footer {
+  /* color: var(--clr-white-text); */
+}
+
 .text {
   font-size: var(--fs-15);
   /* color: var(--clr-white-text); */
@@ -128,6 +132,32 @@ img {
   letter-spacing: -1.07px;
   font-weight: var(--fw-bold);
   color: var(--clr-dark-navy-text);
+}
+
+.q-and-a__question {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.8px;
+  color: var(--clr-dark-navy-text);
+}
+
+.q-and-a__answer {
+  font-size: var(--fs-15);
+  color: var(--clr-dark-navy-text);
+}
+
+.job-position {
+  font-size: var(--fs-18);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark-navy-text);
+  letter-spacing: -0.8px;
+}
+
+.job-location {
+  color: var(--clr-dark-navy-text);
+  font-size: var(--fs-15);
 }
 
 /* ================== */

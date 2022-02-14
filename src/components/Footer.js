@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className='Footer'>
       <div className='footer__main'>
-        <h2>Sign up and Scoot off today</h2>
+        <h2 className='title title--md title--footer'>Sign up and Scoot off today</h2>
 
         <div className='buttons-area'>
           <button className='btn'>AppStore</button>

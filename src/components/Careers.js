@@ -4,7 +4,7 @@ const Careers = () => {
   return (
     <div className='Careers'>
       <section className='banner'>
-        <h2 className='title-banner'>Careers</h2>
+        <h2 className='title'>Careers</h2>
       </section>
 
       <section className='main'>
@@ -17,7 +17,9 @@ const Careers = () => {
                 If you’re passionate about our mission to provide clean, accessible
                 transport to improve urban living we want to hear from you!
               </p>
-              <button className='btn'>Say Hello</button>
+              <a className='btn' href='#'>
+                Say Hello
+              </a>
             </div>
 
             <div className='pair__illus'>
@@ -34,7 +36,7 @@ const Careers = () => {
               <div className='card'>
                 <img src='' alt='' />
                 <div className='card__number'>1</div>
-                <h3 className='title title--sm'>Our tech</h3>
+                <h3 className='title title--normal'>Our tech</h3>
                 <p className='text text--alt'>
                   We’re using cutting edge technology to drive accessible urban
                   transportation forward. Our fully electric scooters are a joy to ride!
@@ -46,7 +48,7 @@ const Careers = () => {
               <div className='card'>
                 <img src='' alt='' />
                 <div className='card__number'>2</div>
-                <h3 className='title title--sm'>Our integrity</h3>
+                <h3 className='title title--normal'>Our integrity</h3>
                 <p className='text text--alt'>
                   We are fully committed to deliver a great yet safe, sustainable
                   micro-mobility experience in every city we serve.
@@ -58,7 +60,7 @@ const Careers = () => {
               <div className='card'>
                 <img src='' alt='' />
                 <div className='card__number'>3</div>
-                <h3 className='title title--sm'>Our community</h3>
+                <h3 className='title title--normal'>Our community</h3>
                 <p className='text text--alt'>
                   We support every community we serve. All workers are paid a living wage
                   based on their location and are Scoot employees.
@@ -75,42 +77,54 @@ const Careers = () => {
                 <p className='job-positon'>General Manager</p>
                 <p className='job-location'> Jakarta, Indonesia</p>
               </div>
-              <button className='btn'>Apply</button>
+              <a className='btn' href='#'>
+                Apply
+              </a>
             </li>
             <li className='job-listing'>
               <div className='job-details'>
-                <p className='job-positon'>UI/UX Designer</p>
+                <p className='job-position'>UI/UX Designer</p>
                 <p className='job-location'>Yokohama, Japan</p>
               </div>
-              <button className='btn'>Apply</button>
+              <a className='btn' href='#'>
+                Apply
+              </a>
             </li>
             <li className='job-listing'>
               <div className='job-details'>
-                <p className='job-positon'>Blog Content Copywriter</p>
+                <p className='job-position'>Blog Content Copywriter</p>
                 <p className='job-location'>New York, United States</p>
               </div>
-              <button className='btn'>Apply</button>
+              <a className='btn' href='#'>
+                Apply
+              </a>
             </li>
             <li className='job-listing'>
               <div className='job-details'>
-                <p className='job-positon'>Graphic Designer</p>
+                <p className='job-position'>Graphic Designer</p>
                 <p className='job-location'>New York, United States</p>
               </div>
-              <button className='btn'>Apply</button>
+              <a className='btn' href='#'>
+                Apply
+              </a>
             </li>
             <li className='job-listing'>
               <div className='job-details'>
-                <p className='job-positon'>Fleet Supervisor</p>
+                <p className='job-position'>Fleet Supervisor</p>
                 <p className='job-location'>Jakarta, Indonesia</p>
               </div>
-              <button className='btn'>Apply</button>
+              <a className='btn' href='#'>
+                Apply
+              </a>
             </li>
             <li className='job-listing'>
               <div className='job-details'>
-                <p className='job-positon'>UX Analyst</p>
+                <p className='job-position'>UX Analyst</p>
                 <p className='job-location'>London, United Kingdom</p>
               </div>
-              <button className='btn'>Apply</button>
+              <a className='btn' href='#'>
+                Apply
+              </a>
             </li>
           </ul>
         </div>

@@ -6,11 +6,13 @@ import './About.css'
 
 const About = () => {
   const [activeAnswer, setActiveAnswer] = useState('')
+  const [activeAnswer2, setActiveAnswer2] = useState('')
 
   const handleClickQuestion = (id) => {
     setActiveAnswer(id)
-
-    console.log(id)
+  }
+  const handleClickQuestion2 = (id) => {
+    setActiveAnswer2(id)
   }
 
   const questionsHowItWorks = [
@@ -31,6 +33,27 @@ const About = () => {
       question: 'How do I download the app?',
       answer:
         'Yup! We provide information inside the app regarding local laws and the license you need to be able to ride our Scoots.',
+    },
+  ]
+
+  const questionsSafeDriving = [
+    {
+      id: 'qs1',
+      question: 'Should I wear a helmet?',
+      answer:
+        'Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.',
+    },
+    {
+      id: 'qs2',
+      question: 'How about the rules & regulations?',
+      answer:
+        'Now is not the time to be a rule breaker. Be sure you’re complying with all local laws and regulations. Also, just be a good human being. Be sure not to park your Scoot where it can block access to buildings or get in people’s way.',
+    },
+    {
+      id: 'qs3',
+      question: 'What if I damage my Scoot?',
+      answer:
+        'Be sure to read our terms and conditions carefully. Not the most fun job we know but we make it as clear as possible. There’s an option to add insurance for each trip, or you can sign up for annual insurance if you’re a regular Scooter.',
     },
   ]
 
@@ -144,45 +167,17 @@ const About = () => {
             </div>
             <div className='faq-group__questions'>
               <ul className='questions-list'>
-                <li
-                  className={`q-and-a ${activeAnswer ? 'active' : ''}`}
-                  id='q4'
-                  onClick={handleClickQuestion}
-                >
-                  <p className='q-and-a__question'>Should I wear a helmet?</p>
-                  <p className='q-and-a__answer'>
-                    Yes, please do! All cities have different laws. But we strongly
-                    strongly strongly recommend always wearing a helmet regardless of the
-                    local laws. We like you and we want you to be as safe as possible
-                    while Scooting.
-                  </p>
-                </li>
-                <li
-                  className={`q-and-a ${activeAnswer ? 'active' : ''}`}
-                  id='q5'
-                  onClick={handleClickQuestion}
-                >
-                  <p className='q-and-a__question'>How about the rules & regulations?</p>
-                  <p className='q-and-a__answer'>
-                    Now is not the time to be a rule breaker. Be sure you're complying
-                    with all local laws and regulations. Also, just be a good human being.
-                    Be sure not to park your Scoot where it can block access to buildings
-                    or get in people's way.
-                  </p>
-                </li>
-                <li
-                  className={`q-and-a ${activeAnswer ? 'active' : ''}`}
-                  id='q6'
-                  onClick={handleClickQuestion}
-                >
-                  <p className='q-and-a__question'>What if I damage my Scoot?</p>
-                  <p className='q-and-a__answer'>
-                    Be sure to read our terms and conditions carefully. Not the most fun
-                    job we know but we make it as clear as possible. There's an option to
-                    add insurance for each trip, or you can sign up for annual insurance
-                    if you're a regular Scooter.
-                  </p>
-                </li>
+                {questionsSafeDriving.map((qa) => (
+                  <li key={qa.id}>
+                    <QuestAndAns
+                      id={qa.id}
+                      question={qa.question}
+                      answer={qa.answer}
+                      onHandleClickQuestion={handleClickQuestion2}
+                      activeAnswer={activeAnswer2}
+                    />
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
