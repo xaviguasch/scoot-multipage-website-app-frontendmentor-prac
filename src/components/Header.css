@@ -1,0 +1,22 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 1.5em;
+}
+
+/* This trick makes one element be at the 
+corner and the other at the exact middle */
+.Navigation,
+.Header__logo {
+  margin-right: auto;
+}
+
+.Navigation {
+  padding-top: 0.5em;
+}
+
+.Header__logo {
+  transform: scale(0.7);
+}

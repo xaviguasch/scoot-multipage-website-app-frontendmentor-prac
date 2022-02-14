@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className='Header'>
       <Navigation position='mobile' />
-      <LogoIcon />
+      <LogoIcon className='Header__logo' />
     </div>
   )
 }
