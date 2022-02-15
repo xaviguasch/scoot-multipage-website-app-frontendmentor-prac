@@ -1,8 +1,12 @@
 import React from 'react'
 
+import Navigation from './Navigation'
+
 import './Footer.css'
 
-import Navigation from './Navigation'
+// Imported icons and patterns
+import { ReactComponent as AppStoreIcon } from '../assets/icons/app-store.svg'
+import { ReactComponent as GooglePlayIcon } from '../assets/icons/google-play.svg'
 
 const Footer = () => {
   return (
@@ -10,9 +14,17 @@ const Footer = () => {
       <div className='footer__main'>
         <h2 className='title title--md title--footer'>Sign up and Scoot off today</h2>
 
-        <div className='buttons-area'>
-          <button className='btn'>AppStore</button>
-          <button className='btn'>GooglePlay</button>
+        <div className='icons-area'>
+          <a href='#'>
+            <div className='icon-container-apple-store-icon'>
+              <AppStoreIcon className='icon-footer' />
+            </div>
+          </a>
+          <a href='#'>
+            <div className='icon-container-google-icon'>
+              <GooglePlayIcon className='icon-footer' />
+            </div>
+          </a>
         </div>
       </div>
 

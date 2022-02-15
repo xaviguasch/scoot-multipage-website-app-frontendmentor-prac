@@ -62,6 +62,7 @@
   --clr-light-yellow: hsla(39, 100%, 94%, 1);
   --clr-light-grey: hsla(213, 40%, 93%, 1);
   --clr-snow: hsla(214, 37%, 96%, 1);
+  --clr-dark-navy-bg: hsl(216, 17%, 35%);
 }
 
 body {
@@ -114,7 +115,7 @@ img {
 }
 
 .title--footer {
-  /* color: var(--clr-white-text); */
+  color: var(--clr-white-text);
 }
 
 .text {
