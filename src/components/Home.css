@@ -22,3 +22,19 @@
 .hero__copy .btn {
   margin-top: 0.625em;
 }
+
+.main__a {
+  padding: 6.5em 2em;
+}
+
+.main__a ul {
+  list-style: none;
+}
+
+.Home__icon {
+  transform: scale(0.6);
+}
+
+.main__a__el .text {
+  margin-top: 1.5em;
+}
