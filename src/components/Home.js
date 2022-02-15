@@ -1,9 +1,18 @@
 import React from 'react'
 
 import './Home.css'
+
+// Imported icons and patterns
 import { ReactComponent as LocateIcon } from '../assets/icons/locate.svg'
 import { ReactComponent as ScooterIcon } from '../assets/icons/scooter.svg'
 import { ReactComponent as RideIcon } from '../assets/icons/ride.svg'
+import { ReactComponent as LeftArrowDownPattern } from '../assets/patterns/left-downward-arrow.svg'
+import { ReactComponent as RightArrowPattern } from '../assets/patterns/right-arrow.svg'
+
+// Imported images
+import telemetryImg from '../assets/images/telemetry.jpg'
+import nearYouImg from '../assets/images/near-you.jpg'
+import paymentsImg from '../assets/images/payments.jpg'
 
 const Home = () => {
   return (
@@ -70,7 +79,8 @@ const Home = () => {
             </div>
 
             <div className='pair__illus'>
-              <img src='' alt='' />
+              <LeftArrowDownPattern className='pattern pattern__one' />
+              <img src={telemetryImg} alt='Woman looking at phone' />
             </div>
           </div>
 
@@ -88,7 +98,8 @@ const Home = () => {
             </div>
 
             <div className='pair__illus'>
-              <img src='' alt='' />
+              <RightArrowPattern className='pattern pattern__two' />
+              <img src={nearYouImg} alt='city street' />
             </div>
           </div>
 
@@ -106,7 +117,8 @@ const Home = () => {
             </div>
 
             <div className='pair__illus'>
-              <img src='' alt='' />
+              <LeftArrowDownPattern className='pattern pattern__three' />
+              <img src={paymentsImg} alt='hand in wallet' />
             </div>
           </div>
         </div>
