@@ -13,10 +13,6 @@ corner and the other at the exact middle */
   margin-right: auto;
 }
 
-.Navigation {
-  padding-top: 0.45em;
-}
-
 .Header__logo {
   transform: scale(0.7);
 }

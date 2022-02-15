@@ -1,3 +1,64 @@
 .Navigation {
+}
+
+/* NOTE: Navigation component has several shapes
+and layouts depending on it's placement inside 
+different components
+*/
+
+/* Header styles */
+.Navigation__header-wrapper {
   cursor: pointer;
+  padding-top: 0.45em;
+}
+
+/* Footer styles */
+.Navigation__footer-wrapper {
+  background-color: var(--clr-darker-grey-bg);
+  margin: 0 auto;
+  padding: 4em 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navigation__logo path {
+  fill: var(--clr-white-text);
+}
+
+.nav-footer {
+  margin-top: 2.5em;
+}
+
+.nav-footer ul,
+.socials-list {
+  list-style: none;
+}
+
+.nav-footer ul li:not(:first-child) {
+  margin-top: 1em;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75em;
+
+  margin-top: 5.45em;
+}
+
+.social-item a {
+  display: inline-block;
+}
+.social-item a:hover path,
+.social-item a:focus path {
+  fill: var(--clr-light-grey);
+}
+
+.social-icon {
+  cursor: pointer;
+  transform: scale(1.1);
 }

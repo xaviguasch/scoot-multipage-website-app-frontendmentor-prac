@@ -8,7 +8,7 @@ import { ReactComponent as LogoIcon } from '../assets/logo.svg'
 const Header = () => {
   return (
     <div className='Header'>
-      <Navigation position='mobile' />
+      <Navigation placement='header' />
       <LogoIcon className='Header__logo' />
     </div>
   )

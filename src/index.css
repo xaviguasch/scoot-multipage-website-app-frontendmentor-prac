@@ -53,6 +53,7 @@
   --clr-white-text: hsla(0, 0%, 100%, 1);
   --clr-dark-navy-text: hsl(216, 17%, 35%);
   --clr-dim-grey-text: hsla(217, 12%, 62%, 1);
+  --clr-yellow-text: hsla(40, 97%, 58%);
 
   /* Background  */
   --clr-white-bg: hsla(0, 0%, 100%, 1);
@@ -63,6 +64,7 @@
   --clr-light-grey: hsla(213, 40%, 93%, 1);
   --clr-snow: hsla(214, 37%, 96%, 1);
   --clr-dark-navy-bg: hsl(216, 17%, 35%);
+  --clr-darker-grey-bg: hsla(215, 14%, 23%, 1);
 }
 
 body {
@@ -183,4 +185,16 @@ img {
 .btn:active {
   color: var(--clr-yellow);
   background-color: transparent;
+}
+
+.NavLink {
+  color: var(--clr-dim-grey-text);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+}
+
+.NavLink:hover,
+.NavLink:focus {
+  color: var(--clr-yellow);
 }
