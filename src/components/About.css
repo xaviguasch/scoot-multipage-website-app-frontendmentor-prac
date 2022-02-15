@@ -1,0 +1,44 @@
+.About {
+}
+
+.banner {
+  padding: 3.75em 2em;
+}
+
+.banner--about {
+  background: url('../assets/images/about-hero-mobile.jpg');
+}
+
+/* Main B */
+.main__b--about {
+  margin-top: 4.5em;
+}
+
+.pattern__four {
+  bottom: 40px;
+  left: 32px;
+}
+
+.pattern__five {
+  top: 0;
+  right: 32px;
+}
+
+/* Main C */
+.main__c {
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5em;
+
+  margin-top: 4em;
+}
+
+.card__img-container img {
+  margin: 0 auto;
+  border-radius: 50%;
+}

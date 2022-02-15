@@ -2,6 +2,17 @@ import React, { useState } from 'react'
 
 import QuestAndAns from './QuestAndAns'
 
+// Imported icons and patterns
+import { ReactComponent as LeftUpArrowUpwardsPattern } from '../assets/patterns/left-upward-arrow.svg'
+import { ReactComponent as RightArrowPattern } from '../assets/patterns/right-arrow.svg'
+
+// Imported images
+import digitalEraImg from '../assets/images/digital-era.jpg'
+import betterLivingImg from '../assets/images/better-living.jpg'
+import ourTechImg from '../assets/images/our-tech.jpg'
+import ourIntegrityImg from '../assets/images/our-integrity.jpg'
+import ourCommunityImg from '../assets/images/our-community.jpg'
+
 import './About.css'
 
 const About = () => {
@@ -59,11 +70,11 @@ const About = () => {
 
   return (
     <div className='About'>
-      <section className='banner'>
+      <section className='banner banner--about'>
         <h2 className='title'>About</h2>
       </section>
       <section className='main'>
-        <div className='main__b'>
+        <div className='main__b main__b--about'>
           <div className='main__b__pair'>
             <div className='pair__copy'>
               <h2 className='title title--md'>Mobility for the digital era</h2>
@@ -75,13 +86,15 @@ const About = () => {
             </div>
 
             <div className='pair__illus'>
-              <img src='' alt='' />
+              <LeftUpArrowUpwardsPattern className='pattern pattern__four' />
+              <img src={digitalEraImg} alt='person checking phone' />
             </div>
           </div>
 
           <div className='main__b__pair'>
             <div className='pair__illus'>
-              <img src='' alt='' />
+              <RightArrowPattern className='pattern pattern__five' />
+              <img src={betterLivingImg} alt='bus on street' />
             </div>
 
             <div className='pair__copy'>
@@ -98,11 +111,15 @@ const About = () => {
         <div className='main__c'>
           <h2 className='title title--md'>Our values</h2>
 
-          <ul>
+          <ul className='card-list'>
             <li>
               <div className='card'>
-                <img src='' alt='' />
-                <div className='card__number'>1</div>
+                <div className='card__img-container'>
+                  <img src={ourTechImg} alt='hand typing on phone' />
+                  <div className='card__num-wrapper'>
+                    <div className='card__number'>1</div>
+                  </div>
+                </div>
                 <h3 className='title title--normal'>Our tech</h3>
                 <p className='text text--alt'>
                   We’re using cutting edge technology to drive accessible urban
@@ -113,8 +130,13 @@ const About = () => {
 
             <li>
               <div className='card'>
-                <img src='' alt='' />
-                <div className='card__number'>2</div>
+                <div className='card__img-container'>
+                  <img src={ourIntegrityImg} alt='man on a vespa' />
+                  <div className='card__num-wrapper'>
+                    <div className='card__number'>2</div>
+                  </div>
+                </div>
+
                 <h3 className='title title--normal'>Our integrity</h3>
                 <p className='text text--alt'>
                   We are fully committed to deliver a great yet safe, sustainable
@@ -125,8 +147,13 @@ const About = () => {
 
             <li>
               <div className='card'>
-                <img src='' alt='' />
-                <div className='card__number'>3</div>
+                <div className='card__img-container'>
+                  <img src={ourCommunityImg} alt='people walking' />
+                  <div className='card__num-wrapper'>
+                    <div className='card__number'>3</div>
+                  </div>
+                </div>
+
                 <h3 className='title title--normal'>Our community</h3>
                 <p className='text text--alt'>
                   We support every community we serve. All workers are paid a living wage
