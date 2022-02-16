@@ -41,7 +41,7 @@ const About = () => {
     },
     {
       id: 'qh3',
-      question: 'How do I download the app?',
+      question: 'Do I need a license to ride?',
       answer:
         'Yup! We provide information inside the app regarding local laws and the license you need to be able to ride our Scoots.',
     },

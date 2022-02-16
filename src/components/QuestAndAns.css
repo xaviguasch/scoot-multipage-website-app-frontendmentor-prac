@@ -1,7 +1,40 @@
+.QuestAndAns {
+  width: 100%;
+
+  text-align: left;
+
+  padding: 2em 1.85em 2em 2em;
+
+  cursor: pointer;
+
+  background: var(--clr-light-grey);
+
+  border: unset;
+}
+
+.QuestAndAns:hover,
+.QuestAndAns:active {
+  background: var(--clr-light-yellow);
+}
+
+.q-and-a__question {
+  display: flex;
+}
+
 .q-and-a__answer {
   display: none;
 }
 
 .q-and-a__answer.active {
   display: block;
+  margin-top: 1.5em;
+}
+
+.chevron-icon {
+  width: 24px;
+  align-self: center;
+}
+
+.chevron-icon.active {
+  transform: rotate(180deg);
 }

@@ -148,6 +148,8 @@ img {
 .q-and-a__answer {
   font-size: var(--fs-15);
   color: var(--clr-dark-navy-text);
+  font-family: var(--ff-main);
+  line-height: 1.666;
 }
 
 .job-position {

@@ -1,4 +1,5 @@
 .About {
+  padding-bottom: 7.5em;
 }
 
 .banner {
@@ -75,4 +76,35 @@
 
 .card__copy-container .text {
   margin-top: 1.625em;
+}
+
+/* Main D */
+.main__d {
+  margin-top: 9em;
+
+  padding: 0 2em;
+}
+
+.main__d .title--normal {
+  margin-top: 3em;
+}
+
+.faq-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.faq-group__questions {
+  /* width: 100%; */
+}
+
+.questions-list {
+  list-style: none;
+}
+
+.questions-list li:not(:first-child) {
+  margin-top: 1em;
 }

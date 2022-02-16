@@ -2,6 +2,8 @@ import React from 'react'
 
 import './QuestAndAns.css'
 
+import { ReactComponent as ChevronIcon } from '../assets/icons/chevron.svg'
+
 const QuestAndAns = ({ question, answer, onHandleClickQuestion, id, activeAnswer }) => {
   const handleButtonClick = () => {
     onHandleClickQuestion(id)
@@ -9,7 +11,10 @@ const QuestAndAns = ({ question, answer, onHandleClickQuestion, id, activeAnswer
 
   return (
     <button className='QuestAndAns btn' onClick={handleButtonClick}>
-      <p className='q-and-a__question'>{question}</p>
+      <div className='q-and-a__question'>
+        <p>{question}</p>
+        <ChevronIcon className={`chevron-icon ${activeAnswer === id ? 'active' : ''}`} />
+      </div>
       <p className={`q-and-a__answer ${activeAnswer === id ? 'active' : ''}`}>{answer}</p>
     </button>
   )
