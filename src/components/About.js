@@ -117,14 +117,17 @@ const About = () => {
                 <div className='card__img-container'>
                   <img src={ourTechImg} alt='hand typing on phone' />
                   <div className='card__num-wrapper'>
-                    <div className='card__number'>1</div>
+                    <div className='card__number'>01</div>
                   </div>
                 </div>
-                <h3 className='title title--normal'>Our tech</h3>
-                <p className='text text--alt'>
-                  We’re using cutting edge technology to drive accessible urban
-                  transportation forward. Our fully electric scooters are a joy to ride!
-                </p>
+
+                <div className='card__copy-container'>
+                  <h3 className='title title--normal'>Our tech</h3>
+                  <p className='text text--alt'>
+                    We’re using cutting edge technology to drive accessible urban
+                    transportation forward. Our fully electric scooters are a joy to ride!
+                  </p>
+                </div>
               </div>
             </li>
 
@@ -133,15 +136,17 @@ const About = () => {
                 <div className='card__img-container'>
                   <img src={ourIntegrityImg} alt='man on a vespa' />
                   <div className='card__num-wrapper'>
-                    <div className='card__number'>2</div>
+                    <div className='card__number'>02</div>
                   </div>
                 </div>
 
-                <h3 className='title title--normal'>Our integrity</h3>
-                <p className='text text--alt'>
-                  We are fully committed to deliver a great yet safe, sustainable
-                  micro-mobility experience in every city we serve.
-                </p>
+                <div className='card__copy-container'>
+                  <h3 className='title title--normal'>Our integrity</h3>
+                  <p className='text text--alt'>
+                    We are fully committed to deliver a great yet safe, sustainable
+                    micro-mobility experience in every city we serve.
+                  </p>
+                </div>
               </div>
             </li>
 
@@ -150,15 +155,17 @@ const About = () => {
                 <div className='card__img-container'>
                   <img src={ourCommunityImg} alt='people walking' />
                   <div className='card__num-wrapper'>
-                    <div className='card__number'>3</div>
+                    <div className='card__number'>03</div>
                   </div>
                 </div>
 
-                <h3 className='title title--normal'>Our community</h3>
-                <p className='text text--alt'>
-                  We support every community we serve. All workers are paid a living wage
-                  based on their location and are Scoot employees.
-                </p>
+                <div className='card__copy-container'>
+                  <h3 className='title title--normal'>Our community</h3>
+                  <p className='text text--alt'>
+                    We support every community we serve. All workers are paid a living
+                    wage based on their location and are Scoot employees.
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
