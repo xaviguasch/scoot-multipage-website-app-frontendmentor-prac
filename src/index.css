@@ -168,14 +168,8 @@ img {
 /* ================== */
 /* Links, buttons & inputs */
 /* ================== */
+
 .btn {
-}
-
-.btn:hover,
-.btn:active {
-}
-
-.btn--hero {
   display: inline-block;
 
   font-size: var(--fs-15);
@@ -190,8 +184,8 @@ img {
   padding: 0.75em 2.4em;
 }
 
-.btn--hero:hover,
-.btn--hero:active {
+.btn:hover,
+.btn:active {
   color: var(--clr-yellow);
   background-color: transparent;
 }
