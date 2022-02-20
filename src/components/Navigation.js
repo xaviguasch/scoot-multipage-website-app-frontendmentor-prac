@@ -5,17 +5,36 @@ import { NavLink } from 'react-router-dom'
 import './Navigation.css'
 
 import { ReactComponent as HamburgerIcon } from '../assets/icons/hamburger.svg'
+import { ReactComponent as CloseIcon } from '../assets/icons/close.svg'
 import { ReactComponent as LogoIcon } from '../assets/logo.svg'
 import { ReactComponent as FacebookIcon } from '../assets/icons/facebook.svg'
 import { ReactComponent as TwitterIcon } from '../assets/icons/twitter.svg'
 import { ReactComponent as InstagramIcon } from '../assets/icons/instagram.svg'
 
-const Navigation = ({ placement }) => {
+const Navigation = ({ placement, onHandleNavOpen, mobileNavOpen }) => {
+  const handleLogoClick = () => {
+    console.log(mobileNavOpen)
+
+    onHandleNavOpen()
+  }
+
+  const handleCityClick = () => {
+    console.log(mobileNavOpen)
+    console.log(onHandleNavOpen)
+
+    onHandleNavOpen()
+  }
+
   if (placement === 'header') {
+    console.log('props in header: ', onHandleNavOpen, mobileNavOpen)
     return (
       <div className='Navigation'>
         <div className='Navigation__header-wrapper'>
-          <HamburgerIcon />
+          {mobileNavOpen ? (
+            <CloseIcon onClick={handleLogoClick} />
+          ) : (
+            <HamburgerIcon onClick={handleLogoClick} />
+          )}
         </div>
       </div>
     )
@@ -66,6 +85,36 @@ const Navigation = ({ placement }) => {
         </div>
       </div>
     )
+
+  if (placement === 'modal') {
+    console.log('props in MODAL: ', onHandleNavOpen, mobileNavOpen)
+
+    return (
+      <div className='Navigation Navigation--modal'>
+        <nav>
+          <ul>
+            <li>
+              <NavLink className='NavLink' to={'/about'} onClick={handleCityClick}>
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className='NavLink' to={'/locations'} onClick={handleCityClick}>
+                Locations
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className='NavLink' to={'/careers'} onClick={handleCityClick}>
+                Careers
+              </NavLink>
+            </li>
+          </ul>
+
+          <button>Get Scootin</button>
+        </nav>
+      </div>
+    )
+  }
 
   return (
     <div className='Navigation'>

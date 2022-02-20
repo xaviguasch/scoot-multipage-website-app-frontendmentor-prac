@@ -214,3 +214,8 @@ ul {
 .NavLink:focus {
   color: var(--clr-yellow);
 }
+
+.Navigation.Navigation--modal .NavLink {
+  color: var(--clr-white-text);
+  font-size: var(--fs-18);
+}
