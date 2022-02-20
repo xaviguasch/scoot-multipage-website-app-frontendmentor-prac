@@ -169,6 +169,15 @@ ul {
   font-size: var(--fs-15);
 }
 
+.city {
+  color: var(--clr-dark-navy-text);
+  font-size: var(--fs-24);
+  padding: 0.65em 2em;
+  background: var(--clr-light-yellow);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+}
+
 /* ======================== */
 /* Links, buttons & inputs  */
 /* ======================== */
