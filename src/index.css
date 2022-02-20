@@ -83,6 +83,10 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 /* ================== */
 /* Typography */
 /* ================== */
@@ -165,9 +169,9 @@ img {
   font-size: var(--fs-15);
 }
 
-/* ================== */
-/* Links, buttons & inputs */
-/* ================== */
+/* ======================== */
+/* Links, buttons & inputs  */
+/* ======================== */
 
 .btn {
   display: inline-block;

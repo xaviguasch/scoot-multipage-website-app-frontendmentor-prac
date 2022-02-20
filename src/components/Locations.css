@@ -1,0 +1,25 @@
+.Locations {
+}
+
+.banner--careers {
+  background: url('../assets/images/careers-location-hero-mobile.jpg');
+}
+
+.main__f {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 4.5em;
+
+  padding: 0 2em 4.5em;
+}
+
+.main__f__world {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+}

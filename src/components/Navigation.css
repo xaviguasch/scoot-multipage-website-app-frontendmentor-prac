@@ -32,11 +32,6 @@ different components
   margin-top: 2.5em;
 }
 
-.nav-footer ul,
-.socials-list {
-  list-style: none;
-}
-
 .nav-footer ul li:not(:first-child) {
   margin-top: 1em;
 }
