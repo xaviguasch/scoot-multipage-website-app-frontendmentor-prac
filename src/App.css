@@ -7,5 +7,6 @@
 }
 
 .App__content__overlay.overlay-active {
-  opacity: 0.4;
+  background: var(--clr-black-bg);
+  opacity: 0.75;
 }

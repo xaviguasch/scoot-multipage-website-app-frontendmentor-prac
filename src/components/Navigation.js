@@ -87,8 +87,6 @@ const Navigation = ({ placement, onHandleNavOpen, mobileNavOpen }) => {
     )
 
   if (placement === 'modal') {
-    console.log('props in MODAL: ', onHandleNavOpen, mobileNavOpen)
-
     return (
       <div className='Navigation Navigation--modal'>
         <nav>
@@ -110,7 +108,7 @@ const Navigation = ({ placement, onHandleNavOpen, mobileNavOpen }) => {
             </li>
           </ul>
 
-          <button>Get Scootin</button>
+          <button className='btn'>Get Scootin</button>
         </nav>
       </div>
     )

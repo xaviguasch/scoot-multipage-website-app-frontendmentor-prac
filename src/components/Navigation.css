@@ -63,6 +63,25 @@ different components
   position: absolute;
   width: 70%;
   height: calc(100vh - 81.85px);
-  background: var(--clr-dark-navy-bg);
+  background: var(--clr-darker-grey-bg);
   z-index: 10;
+
+  padding: 4em 2em 1.5em;
+}
+
+.Navigation--modal nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  height: 100%;
+}
+
+.Navigation--modal ul {
+  text-align: left;
+}
+
+.Navigation--modal ul li:not(:first-child) {
+  margin-top: 1.5em;
 }
