@@ -31,35 +31,48 @@ const Home = () => {
           </a>
         </div>
       </section>
+
       <section className='main'>
         <div className='main__a'>
           <ul>
             <li className='main__a__el'>
-              <LocateIcon className='Home__icon' />
-              <h3 className='title title--sm'>Locate with app</h3>
-              <p className='text text--alt '>
-                Use the app to find the nearest scooter to you. We are continuously
-                placing scooters in the areas with most demand, so one should never be too
-                far away.
-              </p>
+              <div className='Home__icon__container'>
+                <LocateIcon className='Home__icon' />
+              </div>
+              <div className='main__a__el__copy'>
+                <h3 className='title title--sm'>Locate with app</h3>
+                <p className='text text--alt '>
+                  Use the app to find the nearest scooter to you. We are continuously
+                  placing scooters in the areas with most demand, so one should never be
+                  too far away.
+                </p>
+              </div>
             </li>
             <li className='main__a__el'>
-              <ScooterIcon className='Home__icon' />
-              <h3 className='title title--sm'>Pick your scooter</h3>
-              <p className='text text--alt '>
-                We show the most important info for the scooters closest to you. So you
-                know how much charge they have left and can see roughly how much it will
-                cost.
-              </p>
+              <div className='Home__icon__container'>
+                <ScooterIcon className='Home__icon' />
+              </div>
+              <div className='main__a__el__copy'>
+                <h3 className='title title--sm'>Pick your scooter</h3>
+                <p className='text text--alt '>
+                  We show the most important info for the scooters closest to you. So you
+                  know how much charge they have left and can see roughly how much it will
+                  cost.
+                </p>
+              </div>
             </li>
             <li className='main__a__el'>
-              <RideIcon className='Home__icon' />
-              <h3 className='title title--sm'>Enjoy the ride</h3>
-              <p className='text text--alt '>
-                Scan the QR code and the bike will unlock. Retract the cable lock, put on
-                a helmet, and you’re off! Always lock bikes away from walkways and
-                accessibility ramps.
-              </p>
+              <div className='Home__icon__container'>
+                <RideIcon className='Home__icon' />
+              </div>
+              <div className='main__a__el__copy'>
+                <h3 className='title title--sm'>Enjoy the ride</h3>
+                <p className='text text--alt '>
+                  Scan the QR code and the bike will unlock. Retract the cable lock, put
+                  on a helmet, and you’re off! Always lock bikes away from walkways and
+                  accessibility ramps.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
