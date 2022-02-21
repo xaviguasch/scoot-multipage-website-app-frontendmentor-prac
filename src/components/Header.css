@@ -9,7 +9,7 @@
 /* This trick makes one element be at the 
 corner and the other at the exact middle */
 .Navigation,
-.Header__logo {
+.Header__logo-container {
   margin-right: auto;
 }
 

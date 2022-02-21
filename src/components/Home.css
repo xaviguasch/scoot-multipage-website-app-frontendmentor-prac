@@ -9,6 +9,7 @@
 
   background-position: bottom 30px left -315px, top left;
   background-repeat: no-repeat;
+  background-size: auto, cover;
 
   padding: 7.1875em 2em 11.1875em;
   margin: 0 auto;

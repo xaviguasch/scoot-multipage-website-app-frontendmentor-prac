@@ -222,3 +222,38 @@ ul {
   color: var(--clr-white-text);
   font-size: var(--fs-18);
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  /* Typography */
+  .title {
+    font-size: var(--fs-56);
+    letter-spacing: -2.5px;
+  }
+
+  .title--md {
+    font-size: var(--fs-48);
+    letter-spacing: -2.14px;
+  }
+
+  .title--sm {
+    font-size: var(--fs-24);
+    letter-spacing: -1.07px;
+  }
+
+  .q-and-a__question {
+    font-size: var(--fs-24);
+    letter-spacing: -1.07px;
+  }
+
+  .job-position {
+    font-size: var(--fs-24);
+    letter-spacing: -1.07px;
+  }
+
+  /* Links, buttons & inputs  */
+}
