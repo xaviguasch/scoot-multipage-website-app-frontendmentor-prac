@@ -101,3 +101,22 @@
   align-items: center;
   gap: 2em;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .hero {
+    background: url('../assets/patterns/right-arrow.svg'),
+      url('../assets/patterns/white-circles.svg'),
+      url('../assets/images/home-hero-tablet.jpg');
+
+    background-position: bottom 40px left -130px, bottom 40px right -35px, top left;
+    background-repeat: no-repeat;
+    background-size: auto, auto, cover;
+
+    padding: 8.5em 6.125em 13.5em;
+  }
+}
