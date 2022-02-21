@@ -26,7 +26,7 @@ const Home = () => {
             bike, unlock it with a tap, and you’re away!
           </p>
 
-          <a className='btn' href='#'>
+          <a className='btn' href='#footer__get-scootin'>
             Get Scootin
           </a>
         </div>

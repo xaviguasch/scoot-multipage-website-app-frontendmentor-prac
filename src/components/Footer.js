@@ -11,7 +11,7 @@ import { ReactComponent as GooglePlayIcon } from '../assets/icons/google-play.sv
 const Footer = () => {
   return (
     <footer className='Footer'>
-      <div className='footer__main'>
+      <div className='footer__main' id='footer__get-scootin'>
         <h2 className='title title--md title--footer'>Sign up and Scoot off today</h2>
 
         <div className='icons-area'>

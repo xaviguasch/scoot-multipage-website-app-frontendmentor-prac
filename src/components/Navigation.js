@@ -44,7 +44,9 @@ const Navigation = ({ placement, onHandleNavOpen, mobileNavOpen }) => {
     return (
       <div className='Navigation'>
         <div className='Navigation__footer-wrapper'>
-          <LogoIcon className='Navigation__logo' />
+          <NavLink to={'/home'}>
+            <LogoIcon className='Navigation__logo' />
+          </NavLink>
           <nav className='nav-footer'>
             <ul>
               <li>
@@ -108,7 +110,9 @@ const Navigation = ({ placement, onHandleNavOpen, mobileNavOpen }) => {
             </li>
           </ul>
 
-          <button className='btn'>Get Scootin</button>
+          <a className='btn' href='#footer__get-scootin' onClick={handleCityClick}>
+            Get Scootin
+          </a>
         </nav>
       </div>
     )
