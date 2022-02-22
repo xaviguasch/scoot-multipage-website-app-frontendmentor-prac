@@ -107,3 +107,28 @@
 .questions-list li:not(:first-child) {
   margin-top: 1em;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  /* Banner */
+  .banner {
+    padding: 4.5em 6em;
+  }
+
+  .banner .title {
+    text-align: left;
+  }
+
+  .banner--about {
+    background: url('../assets/patterns/white-circles.svg'),
+      url('../assets/images/about-hero-tablet.jpg');
+
+    background-position: bottom 68px right -31px, top left;
+    background-repeat: no-repeat;
+    background-size: auto, auto, cover;
+  }
+}
