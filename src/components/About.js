@@ -73,7 +73,7 @@ const About = () => {
       <section className='banner banner--about'>
         <h2 className='title'>About</h2>
       </section>
-      <section className='main'>
+      <section className='main main--about'>
         <div className='main__b main__b--about'>
           <div className='main__b__pair'>
             <div className='pair__copy'>
@@ -85,14 +85,14 @@ const About = () => {
               </p>
             </div>
 
-            <div className='pair__illus'>
+            <div className='pair__illus pair__illus__four'>
               <LeftUpArrowUpwardsPattern className='pattern pattern__four' />
               <img src={digitalEraImg} alt='person checking phone' />
             </div>
           </div>
 
           <div className='main__b__pair'>
-            <div className='pair__illus'>
+            <div className='pair__illus pair__illus__five'>
               <RightArrowPattern className='pattern pattern__five' />
               <img src={betterLivingImg} alt='bus on street' />
             </div>

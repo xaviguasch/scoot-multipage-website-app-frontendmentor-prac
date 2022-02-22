@@ -131,4 +131,34 @@
     background-repeat: no-repeat;
     background-size: auto, auto, cover;
   }
+
+  /* Main about */
+  .main--about::before {
+    content: '';
+    width: unset;
+    height: unset;
+    background: unset;
+    position: absolute;
+    top: 0;
+    left: unset;
+  }
+
+  /* Main B */
+  .main__b--about {
+    margin-top: 9em;
+    padding-bottom: 7.5em;
+  }
+
+  .pair__illus__four {
+    background-position: top right -350px;
+  }
+
+  .pair__illus__five {
+    background-position: top left -345px;
+  }
+
+  .pattern__five {
+    top: 0;
+    right: 419px;
+  }
 }
