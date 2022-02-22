@@ -85,3 +85,42 @@ different components
 .Navigation--modal ul li:not(:first-child) {
   margin-top: 1.5em;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  /* Footer styles */
+  .Navigation__footer-wrapper {
+    padding: 2em 2.375em 2em;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.6em;
+  }
+
+  .nav-footer {
+    margin-top: unset;
+  }
+
+  .nav-footer ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .nav-footer ul li:not(:first-child) {
+    margin-top: unset;
+  }
+
+  .socials-list {
+    align-items: baseline;
+
+    margin-top: unset;
+    margin-left: auto;
+  }
+}
