@@ -118,28 +118,28 @@ const Navigation = ({ placement, onHandleNavOpen, mobileNavOpen }) => {
     )
   }
 
-  return (
-    <div className='Navigation'>
-      <div className='Navigation__footer-mobile-wrapper'>
-        <LogoIcon className='Navigation__logo' />
-        <nav>
-          <ul>
-            <li>
-              <NavLink to={'/about'}>About</NavLink>
-            </li>
-            <li>
-              <NavLink to={'/locations'}>Locations</NavLink>
-            </li>
-            <li>
-              <NavLink to={'/careers'}>Careers</NavLink>
-            </li>
-          </ul>
+  // return (
+  //   <div className='Navigation'>
+  //     <div className='Navigation__footer-mobile-wrapper'>
+  //       <LogoIcon className='Navigation__logo' />
+  //       <nav>
+  //         <ul>
+  //           <li>
+  //             <NavLink to={'/about'}>About</NavLink>
+  //           </li>
+  //           <li>
+  //             <NavLink to={'/locations'}>Locations</NavLink>
+  //           </li>
+  //           <li>
+  //             <NavLink to={'/careers'}>Careers</NavLink>
+  //           </li>
+  //         </ul>
 
-          <button>Get Scootin</button>
-        </nav>
-      </div>
-    </div>
-  )
+  //         <button>Get Scootin</button>
+  //       </nav>
+  //     </div>
+  //   </div>
+  // )
 }
 
 export default Navigation

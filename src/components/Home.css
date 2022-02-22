@@ -168,4 +168,57 @@
   .main__a__el__copy .text {
     margin-top: 1.625em;
   }
+
+  /* Main B */
+  .pair__illus {
+    padding: 0;
+
+    width: 100%;
+
+    background: url('../assets/patterns/circle.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .pair__illus__one,
+  .pair__illus__three {
+    background-position: top left 673px;
+  }
+
+  .pair__illus img {
+    margin: 0 auto;
+  }
+
+  .pattern__one {
+    bottom: 0;
+    left: 39px;
+  }
+
+  .pair__copy {
+    padding: 0 6.125em;
+    gap: 2.5em;
+  }
+
+  .title--md {
+    max-width: 457px;
+  }
+
+  .pattern__two {
+    top: 0;
+    right: unset;
+    left: -100px;
+  }
+
+  .pair__illus__two {
+    background-position: top right 668px;
+  }
+
+  .pattern__three {
+    top: 85px;
+    left: 419px;
+  }
+
+  .main__b {
+    padding-bottom: 6.5em;
+  }
 }

@@ -91,7 +91,7 @@ const Home = () => {
               </a>
             </div>
 
-            <div className='pair__illus'>
+            <div className='pair__illus pair__illus__one'>
               <LeftArrowDownPattern className='pattern pattern__one' />
               <img src={telemetryImg} alt='Woman looking at phone' />
             </div>
@@ -110,7 +110,7 @@ const Home = () => {
               </a>
             </div>
 
-            <div className='pair__illus'>
+            <div className='pair__illus pair__illus__two'>
               <RightArrowPattern className='pattern pattern__two' />
               <img src={nearYouImg} alt='city street' />
             </div>
@@ -129,7 +129,7 @@ const Home = () => {
               </a>
             </div>
 
-            <div className='pair__illus'>
+            <div className='pair__illus pair__illus__three'>
               <LeftArrowDownPattern className='pattern pattern__three' />
               <img src={paymentsImg} alt='hand in wallet' />
             </div>
