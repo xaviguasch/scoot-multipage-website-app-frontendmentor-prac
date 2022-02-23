@@ -102,7 +102,8 @@ ul {
 
 .title--sm,
 .title--normal,
-.title--md {
+.title--md,
+.title--faq {
   color: var(--clr-dark-navy-text);
 }
 
@@ -111,7 +112,8 @@ ul {
   letter-spacing: -1.43px;
 }
 
-.title--normal {
+.title--normal,
+.title--faq {
   font-size: var(--fs-24);
   letter-spacing: -1.07px;
 }
@@ -247,6 +249,16 @@ ul {
   .title--sm {
     font-size: var(--fs-24);
     letter-spacing: -1.07px;
+  }
+
+  .title.title--normal {
+    font-size: var(--fs-24);
+    letter-spacing: -1.07px;
+  }
+
+  .title.title--faq {
+    font-size: var(--fs-40);
+    letter-spacing: -1.79px;
   }
 
   .q-and-a__question {

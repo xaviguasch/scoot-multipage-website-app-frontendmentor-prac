@@ -38,3 +38,18 @@
 .chevron-icon.active {
   transform: rotate(180deg);
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .QuestAndAns {
+    padding: 2em 2em 2em 2.5em;
+  }
+
+  .q-and-a__question {
+    justify-content: space-between;
+  }
+}

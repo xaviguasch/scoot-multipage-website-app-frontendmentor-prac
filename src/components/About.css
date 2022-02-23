@@ -84,8 +84,8 @@
   padding: 0 2em;
 }
 
-.main__d .title--normal {
-  margin-top: 3em;
+.main__d .title--faq {
+  margin-top: 2em;
 }
 
 .faq-group {
@@ -114,6 +114,10 @@
 
 /* Tablet */
 @media (min-width: 768px) {
+  .title--md {
+    margin: 0 auto;
+  }
+
   /* Banner */
   .banner {
     padding: 4.5em 6em;
@@ -160,5 +164,22 @@
   .pattern__five {
     top: 0;
     right: 419px;
+  }
+
+  /* Main C */
+
+  .card__copy-container {
+    margin-top: 5em;
+
+    max-width: 457px;
+  }
+
+  /* Main D */
+  .main__d .title--faq {
+    margin-top: 1.6em;
+  }
+
+  .faq-group__questions {
+    width: 100%;
   }
 }

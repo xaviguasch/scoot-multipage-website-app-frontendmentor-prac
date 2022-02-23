@@ -176,7 +176,7 @@ const About = () => {
 
           <div className='faq-group'>
             <div className='faq-group__theme'>
-              <h3 className='title title--normal'>How it works</h3>
+              <h3 className='title title--faq'>How it works</h3>
             </div>
             <div className='faq-group__questions'>
               <ul className='questions-list'>
@@ -197,7 +197,7 @@ const About = () => {
 
           <div className='faq-group'>
             <div className='faq-group__theme'>
-              <h3 className='title title--normal'>Safe driving</h3>
+              <h3 className='title title--faq'>Safe driving</h3>
             </div>
             <div className='faq-group__questions'>
               <ul className='questions-list'>
