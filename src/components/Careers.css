@@ -45,3 +45,40 @@
 .job-listing .btn {
   width: 100%;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .banner--careers {
+    background: url('../assets/patterns/white-circles.svg'),
+      url('../assets/images/careers-locations-hero-tablet.jpg');
+
+    background-position: bottom 68px right -31px, top left;
+    background-repeat: no-repeat;
+    background-size: auto, auto, cover;
+  }
+
+  /* Main careers */
+  .main--careers::before {
+    content: '';
+    width: unset;
+    height: unset;
+    background: unset;
+    position: absolute;
+    top: 0;
+    left: unset;
+  }
+
+  /* Main B */
+  .main-b--careers {
+    margin-top: 9em;
+    padding-bottom: 7.5em;
+  }
+
+  .pair__illus__five {
+    background-position: top left 673px;
+  }
+}

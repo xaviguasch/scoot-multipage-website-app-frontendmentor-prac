@@ -18,7 +18,7 @@ const Careers = () => {
         <h2 className='title'>Careers</h2>
       </section>
 
-      <section className='main'>
+      <section className='main main--careers'>
         <div className='main__b main-b--careers'>
           <div className='main__b__pair'>
             <div className='pair__copy'>
@@ -33,7 +33,7 @@ const Careers = () => {
               </a>
             </div>
 
-            <div className='pair__illus'>
+            <div className='pair__illus pair__illus__five'>
               <LeftDownwardArrow className='pattern pattern__six' />
               <img src={joinUsImg} alt='work meeting' />
             </div>

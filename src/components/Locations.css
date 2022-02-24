@@ -1,10 +1,6 @@
 .Locations {
 }
 
-.banner--careers {
-  background: url('../assets/images/careers-location-hero-mobile.jpg');
-}
-
 .main__f {
   display: flex;
   flex-direction: column;
