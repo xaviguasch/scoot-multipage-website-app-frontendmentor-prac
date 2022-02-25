@@ -81,4 +81,10 @@
   .pair__illus__five {
     background-position: top left 673px;
   }
+
+  .main__b__pair {
+    gap: 4em;
+  }
+
+  /* Main C */
 }
