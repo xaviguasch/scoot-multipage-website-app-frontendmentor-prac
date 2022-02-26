@@ -10,7 +10,7 @@ const Locations = () => {
       <section className='banner banner--careers'>
         <h2 className='title'>Locations</h2>
       </section>
-      <section className='main'>
+      <section className='main main--locations'>
         <div className='main__f'>
           <div className='main__f__world'>
             <img src={worldMap} alt='world map' />

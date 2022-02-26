@@ -35,3 +35,25 @@
   place-content: center;
   gap: 2em;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  /* Main locations */
+  .main--locations::before {
+    content: '';
+    width: unset;
+    height: unset;
+    background: unset;
+    position: absolute;
+    top: 0;
+    left: unset;
+  }
+
+  .mobile-map-cities-list {
+    display: none;
+  }
+}
