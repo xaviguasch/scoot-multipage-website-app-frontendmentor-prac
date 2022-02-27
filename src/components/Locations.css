@@ -21,6 +21,11 @@
   gap: 2.5em;
 }
 
+.world-map--tablet,
+.world-map--desktop {
+  display: none;
+}
+
 .mobile-map-cities-list {
   width: 100%;
 }
@@ -42,7 +47,11 @@
 
 /* Tablet */
 @media (min-width: 768px) {
-  /* Main locations */
+  .main__f {
+    margin-top: 8.75em;
+    padding: 0 2.5em 7.5em;
+  }
+
   .main--locations::before {
     content: '';
     width: unset;
@@ -53,7 +62,62 @@
     left: unset;
   }
 
-  .mobile-map-cities-list {
+  .main__f__world {
+    position: relative;
+  }
+
+  .world-map--mobile {
     display: none;
+  }
+
+  .world-map--tablet {
+    display: block;
+  }
+
+  .city {
+    width: 120px;
+    position: absolute;
+  }
+
+  .city::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid var(--clr-yellow);
+
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #ny-in-map {
+    top: 50px;
+    left: 100px;
+  }
+
+  #london-in-map {
+    top: 5px;
+    left: 245px;
+  }
+
+  #yokohama-in-map {
+    top: 50px;
+    left: 530px;
+  }
+
+  #jakarta-in-map {
+    top: 150px;
+    left: 470px;
+  }
+
+  .main__f__copy {
+    gap: 2.5em;
+
+    max-width: 575px;
+
+    align-items: center;
   }
 }
