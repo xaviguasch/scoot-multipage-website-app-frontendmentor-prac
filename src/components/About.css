@@ -8,6 +8,8 @@
 
 .banner--about {
   background: url('../assets/images/about-hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Main B */
@@ -133,7 +135,7 @@
 
     background-position: bottom 68px right -31px, top left;
     background-repeat: no-repeat;
-    background-size: auto, auto, cover;
+    background-size: auto, cover;
   }
 
   /* Main about */

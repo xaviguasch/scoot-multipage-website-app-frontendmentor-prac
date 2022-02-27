@@ -20,3 +20,29 @@ corner and the other at the exact middle */
 .Header__logo {
   transform: scale(0.7);
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .Header {
+    padding: 1.375em 2.5em;
+    justify-content: flex-start;
+    gap: 3.625em;
+  }
+
+  .Header__logo {
+    transform: scale(1);
+  }
+
+  .Navigation,
+  .Header__logo-container {
+    margin-right: unset;
+  }
+
+  .Header__logo-container {
+    order: -1;
+  }
+}

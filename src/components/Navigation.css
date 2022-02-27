@@ -12,6 +12,11 @@ different components
   padding-top: 0.45em;
 }
 
+.nav-tablet,
+.nav__btn {
+  display: none;
+}
+
 /* Footer styles */
 .Navigation__footer-wrapper {
   background-color: var(--clr-darker-grey-bg);
@@ -122,5 +127,32 @@ different components
 
     margin-top: unset;
     margin-left: auto;
+  }
+
+  /* Tablet styles */
+  .Navigation {
+    width: 100%;
+  }
+
+  .Navigation__header-wrapper {
+    display: none;
+  }
+
+  .nav-tablet,
+  .nav__btn {
+    display: block;
+  }
+
+  .nav-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-tablet ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
   }
 }

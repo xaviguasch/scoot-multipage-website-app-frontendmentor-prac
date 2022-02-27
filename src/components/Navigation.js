@@ -36,6 +36,27 @@ const Navigation = ({ placement, onHandleNavOpen, mobileNavOpen }) => {
             <HamburgerIcon onClick={handleLogoClick} />
           )}
         </div>
+
+        <nav className='nav-tablet'>
+          <ul>
+            <li>
+              <NavLink className='NavLink' to={'/about'}>
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className='NavLink' to={'/locations'}>
+                Locations
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className='NavLink' to={'/careers'}>
+                Careers
+              </NavLink>
+            </li>
+          </ul>
+          <button className='btn nav__btn'>Get Scootin</button>
+        </nav>
       </div>
     )
   }
