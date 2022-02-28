@@ -225,5 +225,32 @@
 
 /* Laptop */
 @media (min-width: 1275px) {
-  /* Typography */
+  /* Hero */
+  .hero {
+    background: url('../assets/patterns/line.svg'),
+      url('../assets/patterns/right-arrow.svg'),
+      url('../assets/patterns/white-circles.svg'),
+      url('../assets/images/home-hero-desktop.jpg');
+
+    background-position: bottom 292px left 0px, bottom 157px right 240px,
+      bottom 170px right -35px, top left;
+    background-repeat: no-repeat;
+    background-size: auto, auto, auto, cover;
+
+    padding: 9.5em 10.3125em;
+  }
+
+  .hero__copy {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.5em;
+
+    max-width: 500px;
+
+    text-align: left;
+  }
+
+  .hero__copy .text {
+    margin-left: 6.5em;
+  }
 }
