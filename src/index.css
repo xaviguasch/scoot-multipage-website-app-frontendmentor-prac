@@ -279,3 +279,8 @@ ul {
 
   /* Links, buttons & inputs  */
 }
+
+/* Laptop */
+@media (min-width: 1275px) {
+  /* Typography */
+}

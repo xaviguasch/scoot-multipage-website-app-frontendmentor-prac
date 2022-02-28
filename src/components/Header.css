@@ -46,3 +46,10 @@ corner and the other at the exact middle */
     order: -1;
   }
 }
+
+/* Laptop */
+@media (min-width: 1275px) {
+  .Header {
+    padding: 1.375em 10.3125em;
+  }
+}
