@@ -253,4 +253,38 @@
   .hero__copy .text {
     margin-left: 6.5em;
   }
+
+  .main::before {
+    content: '';
+    width: 974px;
+    height: 15px;
+    background: var(--clr-light-grey);
+    position: absolute;
+    top: 208px;
+    left: 0;
+  }
+
+  /* Main A */
+
+  .main__a {
+    padding: 10em 10.3125em 12.5em;
+  }
+
+  .main__a ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.875em;
+  }
+
+  .main__a__el:not(:first-child) {
+    margin-top: unset;
+  }
+
+  .main__a__el {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.5em;
+  }
 }
