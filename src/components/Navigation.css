@@ -156,3 +156,16 @@ different components
     gap: 2em;
   }
 }
+
+/* Laptop */
+@media (min-width: 1275px) {
+  /* Footer styles */
+  .Navigation__footer-wrapper {
+    padding: 2em 10.3125em;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.6em;
+  }
+}
