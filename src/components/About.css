@@ -185,3 +185,20 @@
     width: 100%;
   }
 }
+
+/* Laptop */
+@media (min-width: 1275px) {
+  /* Banner */
+  .banner {
+    padding: 4.5em 10.3125em;
+  }
+
+  .banner--about {
+    background: url('../assets/patterns/white-circles.svg'),
+      url('../assets/images/about-hero-desktop.jpg');
+
+    background-position: bottom 68px right -31px, top left;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+  }
+}
