@@ -149,4 +149,14 @@
     bottom: 0;
     left: 0px;
   }
+
+  /* Main E */
+  .main__e {
+    margin-top: 7.5em;
+    padding: 0 10.3125em 10em;
+  }
+
+  .jobs-list {
+    gap: 1.5em;
+  }
 }
