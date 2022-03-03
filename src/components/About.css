@@ -196,9 +196,32 @@
   .banner--about {
     background: url('../assets/patterns/white-circles.svg'),
       url('../assets/images/about-hero-desktop.jpg');
-
     background-position: bottom 68px right -31px, top left;
     background-repeat: no-repeat;
     background-size: auto, cover;
+  }
+
+  /* Main B */
+  .main__b--about {
+    margin-top: 7.5em;
+    padding-bottom: 7.5em;
+  }
+
+  .pair__illus__four {
+    order: 1;
+  }
+
+  .pattern__four {
+    bottom: 40px;
+    left: 32px;
+  }
+
+  .pattern__five {
+    top: 0;
+    right: 380px;
+  }
+
+  .main__b__pair .pair__illus__five {
+    background-position: top left -380px;
   }
 }
