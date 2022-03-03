@@ -188,6 +188,10 @@
 
 /* Laptop */
 @media (min-width: 1275px) {
+  .About {
+    padding-bottom: 10em;
+  }
+
   /* Banner */
   .banner {
     padding: 4.5em 10.3125em;
@@ -223,5 +227,44 @@
 
   .main__b__pair .pair__illus__five {
     background-position: top left -380px;
+  }
+
+  /* Main C */
+  .main__c {
+    padding: 0 10.3125em;
+  }
+
+  .main__c .card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875em;
+  }
+
+  /* Main D */
+  .main__d {
+    margin-top: 7.5em;
+
+    padding: 0 10.3125em;
+  }
+
+  .faq-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: unset;
+
+    margin-top: 4em;
+  }
+
+  .main__d .title--faq {
+    margin-top: unset;
+    text-align: left;
+  }
+
+  .faq-group__questions {
+    max-width: 730px;
   }
 }
