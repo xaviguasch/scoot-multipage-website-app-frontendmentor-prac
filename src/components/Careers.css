@@ -117,3 +117,36 @@
     width: 180px;
   }
 }
+
+/* Laptop */
+@media (min-width: 1275px) {
+  .banner--careers {
+    background: url('../assets/patterns/white-circles.svg'),
+      url('../assets/images/careers-locations-hero-desktop.jpg');
+
+    background-position: bottom 68px right -31px, top left;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+  }
+
+  /* Main B */
+  .main-b--careers {
+    margin-top: 7.5em;
+    padding-bottom: 7.5em;
+  }
+
+  .main-b--careers .main__b__pair {
+    gap: unset;
+  }
+
+  .main-b--careers .pair__illus__five {
+    order: 1;
+
+    background-position: top left 620px;
+  }
+
+  .pattern__six {
+    bottom: 0;
+    left: 0px;
+  }
+}
