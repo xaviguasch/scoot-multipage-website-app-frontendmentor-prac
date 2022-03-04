@@ -121,3 +121,41 @@
     align-items: center;
   }
 }
+
+/* Laptop */
+@media (min-width: 1275px) {
+  .main__f {
+    margin-top: 7.5em;
+    padding: 0 10.3125em 7.5em;
+  }
+
+  .world-map--tablet {
+    display: none;
+  }
+
+  .world-map--desktop {
+    display: block;
+  }
+
+  .main__f__copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+
+    max-width: unset;
+    width: 100%;
+
+    text-align: left;
+  }
+
+  .main__f__copy .title--md {
+    max-width: 350px;
+    margin: 0;
+  }
+
+  .main__f__copy .text {
+    max-width: 445px;
+  }
+}

@@ -36,7 +36,7 @@ const Locations = () => {
           </div>
 
           <div className='main__f__copy'>
-            <h2 className='title title--md'>Your City Not listed?</h2>
+            <h2 className='title title--md'>Your city not listed?</h2>
             <p className='text text--alt'>
               If you’d like to see Scoot in your hometown, be sure to let us know. We
               track requests and plan launches based on demand. Feel free to message us by
